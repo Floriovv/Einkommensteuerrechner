@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>Ihr Einkommensteuerrechner</h1>
+    <div class="container">
+      <p>Bitte gib deine Daten in die folgenden Felder ein damit wir deine Einkommensteuerzahllast berechnen können.</p>
+      <select name="Year" id="taxyear">
+        <option value="2018">2018</option>
+        <option value="2019" selected>2019</option>
+        <option value="2020">2020</option>
+      </select>
+      <select name="Tarif" id="select-tarif" value="">
+        <option value="grund">Grundtarif</option>
+        <option value="splitting">Splittingtarif</option>
+      </select>
+      <input type="number" value="" placeholder="ZvE in € (abgerundet)" id="zvE" />
+      <input type="button" value="berechnen" onclick="calc()" class="button"/>
+      <h1 id="result">Deine Einkommensteuerzahllast beträgt: </h1>
+    </div>
+  </div>
+  <p id="sorry">gib sorry() in die Console ein</p>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
